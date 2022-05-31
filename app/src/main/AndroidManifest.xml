@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.healstationlab.design">
+
+    <application
+        android:name=".resource.App"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="stateAlwaysHidden"
+        tools:replace="android:allowBackup"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        tools:ignore="DataExtractionRules,UnusedAttribute">
+        <activity
+            android:exported="false"
+            android:name=".ui.login.findIdResultActivity" />
+        <activity
+            android:exported="false"
+            android:name=".ui.login.NoDataActivity"
+            android:theme="@style/AppTheme.TranslucentAlert" />
+
+        <activity android:name="com.nhn.android.naverlogin.ui.OAuthCustomTabActivity" android:exported="true"/>
+
+
+        <activity android:name=".ui.ShemeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="api.ggumnol.net"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:exported="false"
+            android:name=".ui.login.test" />
+
+        <activity
+            android:exported="false"
+            android:name=".ui.login.SNSActivity" />
+        <activity
+            android:exported="false"
+            android:name=".ui.login.NewPasswordActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="false"
+            android:name=".ui.sevenDaysActivity"
+            android:theme="@style/AppTheme.TranslucentAlert" />
+        <activity
+            android:exported="true"
+            android:name=".ui.PGActivity" />
+        <activity
+            android:exported="false"
+            android:name=".ui.report.Report6Activity" />
+
+        <activity
+            android:exported="false"
+            android:name=".ui.report.Report5Activity" />
+        <activity
+            android:exported="false"
+            android:name=".ui.report.Report4Activity" />
+        <activity
+            android:exported="false"
+            android:name=".ui.report.Report3Activity" />
+        <activity
+            android:exported="false"
+            android:name=".ui.report.Report2Activity" />
+        <activity android:exported="false"
+            android:name=".ui.NiceIdActivity" />
+        <activity
+            android:exported="false"
+            android:name=".ui.PostInqueryActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="false"
+            android:name=".ui.InqueryActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="false"
+            android:name=".ui.TermActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="false"
+            android:name=".ui.AlarmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.TranslucentAlert"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.MyReviewActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.PopupActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            android:theme="@style/AppTheme.TranslucentAlert" />
+        <activity
+            android:exported="false"
+            android:name=".ui.CategoryProductActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.MySkinResultListActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            android:theme="@style/AppTheme.TranslucentAlert" />
+        <activity
+            android:exported="false"
+            android:name=".ui.SearchActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.SungBoonActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            android:theme="@style/AppTheme.TranslucentAlert" />
+        <activity
+            android:exported="false"
+            android:name=".ui.DetailChatActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.DcCouponActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.MyFaceActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.PublicNoticeActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.login.SelectLoginActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.report.ReportActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.Setting2Activity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.SettingActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+
+        <activity
+            android:exported="false"
+            android:name=".ui.SearchAddressActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.ProductInqueryActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.AttendanceActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.ProductDetailActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.AddAddressActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.DeliveryListActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.PaymentActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.CartActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.ReviewActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.WriteReviewActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.OrderActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.CouponActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.AddChatActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.EventDetailActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.login.SignUpPopupActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.login.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.login.LoginActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".alert.AlertActivity"
+            android:theme="@style/AppTheme.TranslucentAlert" />
+        <activity
+            android:exported="false"
+            android:name=".ui.MainActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.EditProfileActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.login.SingupActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.login.AgreementActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.login.TermOfServiceActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.login.AuthActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="false"
+            android:name=".ui.login.PermissionActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+
+        <activity
+            android:exported="true"
+            android:name=".ui.SplashActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="oauth"
+                    android:scheme="kakao8531c12a17718321449db74dca6120a3" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="test"
+            android:value="10" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/beaucat" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/black" />
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.healstationlab.design"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name=".resource.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"
+        tools:ignore="ManifestOrder" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
